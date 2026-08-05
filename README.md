@@ -2,6 +2,19 @@
 
 Bootstrap secretless GitHub-to-Azure authentication across organizations, repositories, environments, and subscriptions.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions |
+| Services and stack | Entra ID; GitHub Actions; Managed Identities; Azure Resource Manager; Log Analytics |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; YAML configuration; Python validation/tests |
+
 ## Problem statement
 
 A multi-repository manifest produces narrowly scoped GitHub-to-Azure federated credentials and RBAC plans after tenant, subject, audience, approval, and private-target validation.
